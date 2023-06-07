@@ -1,0 +1,10 @@
+<div class="alertModal">
+  <div class="alertModal__backdrop"(click)="onClose()"></div>
+  <div class="alertModal__alertBox">
+    <p class="alertModal__alertMessage">{{ message }}</p>
+    <button
+      class="alertModal__close btn btn-primary"
+      (click)="onClose()"
+    >Close</button>
+  </div>
+</div>

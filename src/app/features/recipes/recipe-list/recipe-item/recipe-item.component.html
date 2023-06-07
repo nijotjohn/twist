@@ -1,0 +1,17 @@
+<button type="button" class="list-group-item list-group-item-action clearfix"
+  [routerLink]="[index]"
+  routerLinkActive="active"
+>
+  <div class="float-start">
+    <h4>{{ recipe.name | titlecase }}</h4>
+    <p>{{ recipe.description | truncate:40 }}</p>
+  </div>
+  <div class="float-end">
+    <img class="img-fluid" 
+      src="{{ recipe.imagePath }}" 
+      alt="{{ recipe.name }}" 
+      srcset="" 
+      style="max-height: 50px;"
+    >
+  </div>
+</button>

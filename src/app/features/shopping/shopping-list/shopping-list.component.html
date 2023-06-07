@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <app-shopping-edit></app-shopping-edit>
+    </div>
+    <hr>
+    <div class="col-12">
+      <div class="list-group">
+        <ng-container *ngFor="let ingredient of ingredients; let i = index;">
+          <button
+            type="button"
+            class="list-group-item list-group-item-action"
+            (click)="onEditItem(i)"
+          >
+            {{ ingredient.name }} ({{ ingredient.amount }})
+          </button>
+        </ng-container>
+      </div>
+    </div>
+  </div>
+</div>

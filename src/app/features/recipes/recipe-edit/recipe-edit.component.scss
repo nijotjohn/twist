@@ -1,0 +1,11 @@
+.editRecipe{
+  min-height: 200vh;
+  overflow-y: auto;
+}
+.recipeImage{
+  max-height: 300px;
+}
+input.ng-invalid.ng-touched,
+textarea.ng-invalid.ng-touched{
+  border: 1px solid red;
+}

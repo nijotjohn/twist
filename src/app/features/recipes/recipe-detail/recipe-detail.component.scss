@@ -1,0 +1,12 @@
+.recipe-detail{
+
+  min-height: 100vh;
+  overflow-y: auto;
+
+  &__image{
+    max-height: 400px;
+  }
+}
+.dropdown-menu{
+  margin-top: 40px;
+}
